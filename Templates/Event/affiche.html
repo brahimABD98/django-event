@@ -1,0 +1,20 @@
+<table border='1'>
+    <tr>
+        <th>title</th>
+        <th>description</th>
+        <th>image</th>
+        <th>category</th>
+        <th>etat</th>
+        <th>detail</th>
+    </tr>
+    {% for e  in ee %}
+        <tr>
+            <td>{{ e.title }}</td>
+            <td>{{ e.description }}</td>
+            <td>{{ e.image }}</td>
+            <td>{{ e.category }}</td>
+            <td>{{ e.state }}</td>
+            <td><a href="">Detail</a></td>
+        </tr>
+    {% endfor %}
+</table>
